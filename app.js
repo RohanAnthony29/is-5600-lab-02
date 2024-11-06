@@ -28,6 +28,8 @@ function handleUserListClick(event, users, stocks) {
   renderPortfolio(user, stocks);
 }
 
+
+
 // Populate Form
 function populateForm(data) {
   const { user, id } = data;
@@ -38,6 +40,7 @@ function populateForm(data) {
   document.querySelector('#city').value = user.city;
   document.querySelector('#email').value = user.email;
 }
+
 
 // Render Portfolio
 function renderPortfolio(user, stocks) {
@@ -60,6 +63,7 @@ function renderPortfolio(user, stocks) {
     portfolioDetails.appendChild(actionEl);
   });
 
+
   portfolioDetails.addEventListener('click', (event) => {
     if (event.target.tagName === 'BUTTON') {
       viewStock(event.target.id, stocks);
@@ -67,7 +71,9 @@ function renderPortfolio(user, stocks) {
   });
 }
 
-// View Stock Details
+
+
+// View Stock Detailss
 function viewStock(symbol, stocks) {
   const stockArea = document.querySelector('.stock-form');
   if (stockArea) {
