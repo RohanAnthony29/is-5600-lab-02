@@ -28,6 +28,8 @@ function handleUserListClick(event, users, stocks) {
   renderPortfolio(user, stocks);
 }
 
+
+
 // Populate Form
 function populateForm(data) {
   const { user, id } = data;
